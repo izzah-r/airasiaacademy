@@ -3,13 +3,6 @@ import streamlit as st
 import pandas as pd
 import pickle
 
-from google.colab import drive
-drive.mount('/content/drive')
-
-df = pd.read_csv('drive/MyDrive/ColabDataset/Advertising.csv')
-df.head()
-
-
 st.write("""
 # Advertising Project
 
@@ -39,4 +32,3 @@ prediction = loaded_model.predict(df)
 
 st.subheader('Prediction')
 st.write(prediction)
-
